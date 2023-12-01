@@ -18,7 +18,7 @@
 		<div class="row mb-30">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<h3>Why to Choose</h3>
-				<h2>Dr Rakesh Reddy Boya</h2>  
+				<h2>Dr Rakesh Reddy</h2>  
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 d-none">
 			<div class="_vdo m_hyt">
