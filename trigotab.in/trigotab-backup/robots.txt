@@ -1,0 +1,5 @@
+User-agent: *
+
+allow: /
+
+Sitemap: http://www.menthopas.com/sitemap.xml

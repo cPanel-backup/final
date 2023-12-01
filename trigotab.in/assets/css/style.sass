@@ -1,0 +1,971 @@
+// Framwork Styles
+@import 'bootstrap-4.6.0/scss/bootstrap'
+//icon Fonts
+@import url('font-awesome-4.7.0/font-awesome.css')
+//CSS Animate
+@import url('animate.min.css')
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+//import Web Fonts
+//@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//theme_variables
+@import '_theme_variables'
+@import '_sass_custom_attributes'
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+html 
+  scroll-behavior: smooth
+
+body
+  font-family: 'Nunito', sans-serif
+  box-sizing: border-box
+  font-size: $font16
+  background-color: #FFFDF9
+
+h1,.h1
+  font-size: $font60
+
+h2,.h2  
+  font-size: $font45
+
+h3,.h3
+  font-size: $font36
+
+h4,.h4
+  font-size: $font28
+  font-weight: $Semi-bold
+
+h5,.h5
+  font-size: $font24
+  font-weight: $Medium
+
+h6,.h6
+  font-size: $font20
+  font-weight: $Medium
+
+p,.p
+  font-size: $font16
+  line-height: 28px
+  text-align: left 
+  color: #000
+
+@mixin button
+  width: auto
+  padding: 0 20px
+  height: 50px 
+  background-color: #0B564E 
+  color: #fff !important
+  border-radius: 25px
+  border-width: 0
+  line-height: 46px
+  text-align: center
+  display: inline-flex  
+  align-items: center
+  transition: none
+  border: 1px solid #0B564E
+
+@mixin button2
+  width: auto
+  padding: 0 20px
+  height: 50px 
+  background-color: #fff 
+  color: #0B564E !important
+  border-radius: 25px
+  border-width: 0
+  line-height: 46px
+  text-align: center
+  display: inline-flex  
+  align-items: center
+  transition: none
+  border: 1px solid #0B564E
+
+@mixin button3
+  width: auto
+  padding: 0 20px
+  height: 50px 
+  background-color: transparent
+  color: #fff 
+  border-radius: 25px
+  border: 1px solid #fff
+  font-size: 20px 
+  line-height: 46px
+  text-align: center
+  display: inline-flex 
+  align-items: center
+
+.btn 
+  @include button
+
+.btn2 
+  @include button2
+
+.btn3 
+  @include button3
+  
+.btn:hover 
+  background-color: #fff 
+  color: #0B564E !important
+  border: 1px solid #0B564E 
+
+.btn2:hover 
+  text-decoration: none
+  background-color: #0B564E
+  color: #fff !important
+  border: 1px solid #fff 
+
+.btn3:hover 
+  background-color: #FFCF4C
+  color: #000000 !important
+  border: none
+
+    
+input,button
+  outline: none 0px
+
+::-moz-selection 
+  color: $primary-bg
+  background:  $primary-bg !important
+::selection 
+  color: $primary-bg
+  background: $primary-bg !important
+
+
+//nav
+
+nav 
+  .trigotab_logo
+    width: 180px
+  ul li 
+    position: relative
+    a 
+      color: #0B564E
+      font-weight: 500
+      text-decoration: none
+      letter-spacing: 0.15em
+      display: inline-block
+      padding: 15px 20px
+      position: relative
+    a:after
+      background: none repeat scroll 0 0 transparent
+      bottom: 0
+      content: ""
+      display: block
+      height: 2px
+      left: 50%
+      position: absolute
+      background: #0B564E
+      transition: width 0.3s ease 0s, left 0.3s ease 0s
+      width: 0
+    a:hover:after
+      width: 100%
+      left: 0
+
+.navbar-light .navbar-nav .nav-link
+    color: #000
+
+//index_page
+
+.index_top_sec 
+  background-image: url("../img/bg1.png")
+  background-size:cover 
+  width: 100% 
+  position: relative
+  z-index: 4
+  padding-bottom: 50px
+  .leaves_img
+    width: 25%
+    position: absolute 
+    top: 0 
+    left: 0
+  .index_top_left_sec
+    width: 60%
+    padding-top: 10%
+    padding-left: 10%
+    .heading1 
+      font-size: 24px 
+      font-weight: 700
+    .heading2
+      font-size: 42px 
+      font-weight: 800
+    .btn_cont
+      padding-top: 2%
+  .index_top_right_sec
+    width: 40%
+    img 
+      width: 100%
+
+//instructions_cont 
+.instructions_cont
+  display: flex
+  padding-bottom: 2%
+  .instructions_cont_left_sec
+    width: 54%
+    display: flex
+    position: relative
+    top: -4rem
+    left: -8rem
+    .family_img 
+      width: 100%
+  .instructions_cont_right_sec
+    width: 46%
+    margin-top: 6%
+    h4 
+      padding-bottom: 1%
+    .inst 
+      display: flex
+      .left_inst 
+        width: 50%
+      .right_inst 
+        width: 50%
+
+//ingredients_sec 
+.ingredients_sec 
+  background-image: url('../img/bg2.png')
+  width: 100% 
+  background-size: cover
+  .ingredients_sec_inner_cont 
+    display: flex 
+    align-items: center
+    .ingredients_right_sec 
+      text-align: right
+      img 
+        width: 90%
+
+//info_sec
+.info_sec
+  padding-top: 50px 
+  padding-bottom: 50px
+  .info_sec_top, p, h4, h6 
+    text-align: center
+    p 
+      font-weight: 600
+    h6 
+      font-weight: 800  
+      padding: 2% 0
+  .info_sec_inner
+    .info_sec_content 
+      h5 
+        font-weight: 800  
+      .bold_text 
+        font-weight: 600
+        text-align: left
+      .normal_text 
+        text-align: left
+  .info_mid_sec
+    position: relative
+    .trigotab_packshot2 
+      width: 100%
+    .hand_img
+      position: absolute 
+      width: 50%
+      bottom: 0
+      left: 30% 
+      animation: wave 4s linear infinite
+
+//who_should_use 
+.who_should_use
+  display: flex 
+  align-items: center
+  background-color: #F8FAF0
+  .who_should_use_left_Sec 
+    width: 50% 
+    .family_img 
+      width: 100%
+  .who_should_use_right_Sec
+    width: 50%
+    padding: 2%
+
+//how_to_use 
+.how_to_use 
+  padding-top: 50px 
+  padding-bottom: 50px
+  .usage 
+    width: 70%
+    padding-bottom: 10px
+  p 
+    text-align: center
+
+//expert_info
+.expert_info 
+  background-color: #F8FAF0
+  display: flex 
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 4%
+  text-align: center
+  h3 
+    font-weight: 800
+    padding-bottom: 2%
+  h6 
+    color: #0B564E
+    font-weight: 700
+
+//index_pg_bot_sec
+.index_pg_bot_sec
+  display: flex 
+  flex-direction: column 
+  align-items: center
+  padding: 4%
+  .external_social_icon 
+    width: 80%
+    padding: 4% 0
+
+// contactus 
+.contactus 
+  background-color: #F3F0E4
+  padding-top: 2%
+  .footer_logo 
+    width: 60% 
+    margin-left: -2%
+  .social_icons 
+    display: flex
+    a 
+      color: #000
+      border: 1px solid #000
+      display: flex
+      width: 40px
+      border-radius: 50%
+      justify-content: center
+      align-items: center
+      height: 40px
+      text-decoration: none
+      i 
+        font-size: 20px
+      &:hover
+        background-color: #000 
+        color: #fff
+
+
+
+.copyright_txt
+  background-color: #0B564E
+  display: flex
+  justify-content: center
+  p
+    color: #fff
+    padding-top:16px
+    a 
+      color: #fff
+
+//about_trigotab_top_sec 
+.about_trigotab_top_sec
+  padding-top:6%
+  display: flex
+  .left_sec_bg
+    background-image: url("../img/green_bg.png")
+    width: 80%
+    display: flex 
+    flex-direction: column 
+    justify-content: center 
+    align-items: center
+    .left_sec 
+      width: 60%
+      h6 
+        color: #fff
+      h1
+        color: #fff
+        font-weight: 700
+      p 
+        color: #fff
+  .right_sec
+    display: flex 
+    flex-direction: column 
+    justify-content: center 
+    align-items: center
+    .trigotab_packshot4 
+      width: 100%
+      height: 80%
+      margin-left: -44%
+
+//why_choose_trigotab_sec 
+.why_choose_trigotab_sec
+  padding-top: 100px
+  padding-bottom: 100px
+  h3 
+    text-align: center
+    color: #0B564E
+    font-weight: 800
+    font-size: 50px
+  p
+    text-align: center
+  .trigotab_img_description
+    padding-top: 6%
+    .content 
+      text-align: center
+      .Whats_inside_sec_heading 
+        font-weight: 700 
+      img 
+        width: 70% 
+    .trigotab_img_top_mid_cont 
+      .leaves_animation img
+        width: 100%
+      img 
+        width: 100%
+    .trigotab_img_bot_mid_cont 
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: end
+      margin-top: 16%
+    .trigotab_img_top_mid_cont
+      position: relative
+      .leaves_animation
+         position: absolute
+      .TRIGOTABLBL-2 
+        position: absolute
+    .trigotab_img_bot_left_cont img
+        width: 70%
+        margin-left: 50%
+        margin-top: 10%
+    .trigotab_img_bot_right_cont img
+      width: 80%
+      margin-left: -18%
+      margin-top: 10%
+  .mobile_trigotab_description_img 
+    text-align: center 
+    img 
+      width: 80%
+  
+//about
+.about_sec
+  background-color: #F8F6ED
+  padding: 4%
+  h3,p 
+    text-align: center
+  h3 
+    font-weight: 700
+    span 
+      color: #57AC49
+      font-size: 50px
+      font-weight: 800
+  p 
+    font-weight: 600
+    span 
+      color: #57AC49
+      font-size: 50px
+
+//testimonials 
+.testimonials 
+  padding-top: 50px
+  padding-bottom: 50px
+  h3 
+    text-align: center
+    color: #0B564E
+    font-weight: 800
+    font-size: 50px
+  .tab_sec 
+    display: flex 
+    justify-content: center
+    .tabs
+      display: flex 
+      flex-direction: column
+      .links
+        display: flex 
+        justify-content: center
+
+
+//gradient_img_cont
+.gradient_img_cont 
+  position: relative 
+  &::after
+    content: ''
+    position: absolute
+    left: 0 
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7))
+  img 
+    width: 100%
+  .gradient_img_content 
+    position: absolute
+    text-align: center
+    top: 50%
+    left: 0
+    right: 0
+    margin: auto
+    transform: translateY(-50%)
+    z-index: 4
+    p 
+      color: #8C8C8C 
+      text-align: center
+      font-weight: 600
+      font-size: 22px
+    h3 
+      font-weight: 600 
+      color: #fff
+    .btn_cont 
+      display: flex 
+      flex-direction: column
+      align-items: center
+      padding-top:1%
+
+//faqs 
+
+.faqs
+  background-color: #fff
+  padding-top: 50px 
+  padding-bottom: 50px
+  h3 
+    text-align: center
+    color: #0B564E
+    font-weight: 800
+    font-size: 50px
+    margin-bottom: 4%
+
+//expert_advice_sec
+.expert_advice_sec
+  padding-top: 150px
+  padding-bottom: 50px
+  .expert_advice_sec_heading 
+    text-align: center
+  .expert_video_icon_block
+    p 
+      width: 40% 
+      color: #fff
+      padding-left: 4%
+    img 
+      width: 50px
+      cursor: pointer
+    h6 
+      color: #fff 
+      font-weight: 600
+      padding-left: 4%
+
+.expert_advice_cont_sec
+  background-color: #F3F0E4
+  text-align: center
+  padding: 6%
+  h3
+    font-size: 30px 
+    font-weight: 700
+  p 
+    text-align: center
+
+.advices
+  padding-top: 50px
+  padding-bottom: 50px
+  .content 
+    .name ,.specialist
+      font-weight: 700
+  .expert_video_block
+    .expert_video_icon_cont img 
+      width: 40%
+      cursor: pointer
+
+//expert_advice_bot_sec
+.expert_advice_bot_sec
+  padding-top: 50px 
+  padding-bottom: 50px
+  h3 
+    text-align: center
+    color: #0B564E
+    font-weight: 800
+    font-size: 50px
+  .social_links img 
+    width: 50%
+
+//Blog
+.blog 
+  padding-top: 150px 
+  padding-bottom: 50px
+  .h3 
+    text-align: center
+    color: #0B564E
+    font-weight: 800
+    font-size: 50px
+    padding-bottom: 10px
+  .blog_cont 
+    display: flex 
+    flex-wrap: wrap
+    justify-content: space-around
+    .card-body
+      padding-left: 2rem !important
+      border-bottom: none !important
+      .date
+        color: #186EBE
+        font-weight: 800
+      .cardText
+        font-weight: 600
+
+//innerBlog
+.innerBlog
+  padding-top: 150px
+  padding-bottom: 50px
+  .h3
+    color: #000
+    font-weight: 600
+    font-size: 32px
+  .blogImg
+    width: 100%
+    padding: 6px 0
+  h4 
+    font-weight: 700
+  .blogImg1-1, .blogImg1-2
+    width: 100%
+    padding: 6px 0
+  .social_icons 
+    display: flex
+    align-items: center
+    h6 
+      font-weight: 700
+      padding-right: 1%
+    a 
+      color: #000
+      border: 1px solid #000
+      display: flex
+      width: 40px
+      border-radius: 50%
+      justify-content: center
+      align-items: center
+      height: 40px
+      text-decoration: none
+      i 
+        font-size: 20px
+      &:hover
+        background-color: #000 
+        color: #fff
+  .rightSec
+    display: flex 
+    justify-content: end
+    margin-top: 12%
+    h5 
+      font-weight: 700 
+    .innerblog_card
+      border-style: none
+      .card-body
+        padding: 0 !important
+        .date
+          color: #186EBE
+          font-weight: 800
+        .cardText
+          font-weight: 700
+          margin-top: -18px
+
+//contactUs 
+.contactUs
+  padding-top: 150px
+  padding-bottom: 50px
+  .left_sec
+    background-color: #0B564E
+    width: 100%
+    padding: 4%
+    position: relative
+    border-radius: 28px
+    .left_sec_bg_img 
+      position: absolute 
+      bottom: 0 
+      right: 0
+      text-align: end
+      .Mask_group
+        width: 50%
+    .left_sec_cont
+      position: absolute
+      .h4
+        color: #fff
+      p 
+        color: #fff
+      .contact_icon 
+        display: flex
+        align-items: center
+        margin-bottom: 16px
+        a 
+          display: contents
+          img 
+            width: 40px 
+            margin-right:2%
+          p 
+            color: #fff
+            margin-bottom: 0
+  .right_sec 
+    h5 
+      font-weight: 700
+    label 
+      color: #6F6F6F
+    input 
+      color: #000 
+      font-weight: 600
+
+//Disclaimer
+.disclaimer
+  display: none
+  height: auto
+  position: fixed
+  z-index: 999
+  padding: 4px 3%
+  background-color: #eee
+  border-top: 2px solid #26130C
+  bottom: -90%
+  -webkit-transition-timing-function: ease-in
+  transition-timing-function: ease-in
+  transition: bottom 0.5s
+  &.show
+    display: block
+    bottom: 0
+    transition: bottom 1s
+    -webkit-transition-timing-function: ease-in
+    transition-timing-function: ease-in
+  p
+    float: left
+    width: 88%
+    display: inline-block
+    font-size: 12px
+  a
+    display: inline-block
+    float: left
+    margin: 15px
+    padding: 8px 30px
+    z-index: 100
+    color: $white !important
+    background: $primary-bg
+    text-transform: uppercase
+    text-decoration: none !important
+    cursor: pointer
+
+//Pop Box
+.popbox
+  position: fixed
+  background: #fff
+  bottom: 1em
+  z-index: 100
+  right: 1em
+  border: 8px solid $primary-bg
+  width: 350px
+  -webkit-animation-name: fadeInRight
+  animation-name: fadeInRight
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  animation-delay: 3s
+  .close-icon
+    position: absolute
+    right: -25px
+    top: -25px
+    background-color: $primary-bg
+    width: 30px
+    height: 30px
+    border-radius: 25px
+    border: none
+    opacity: 1
+    color: $white
+    z-index: 999
+    font-size: 22px
+    line-height: 30px
+    font-weight: bold
+    text-align: center
+
+//Testimonial
+
+
+//Faq
+.faq .hdng
+  a
+    display: block
+    position: relative
+    color: #000
+    font-size: 18px
+    text-decoration: none
+    padding: 0.75rem 1.5rem 0.75rem 1.7rem
+    font-weight: 600
+    background: url(../img/plus.svg) no-repeat right 5px center
+    background-size: 22px
+  > a[aria-expanded="true"]
+    background: url(../img/minus.svg) no-repeat right 5px center
+    background-size: 22px 
+
+
+//Responsive Media Quaries Section
+//large screen
+@media (max-width:767px)
+  .ingredients_sec 
+    background-image: url('../img/bg2.png')
+    width: 100% 
+    background-size: cover
+    .ingredients_sec_inner_cont 
+      display: flex 
+      align-items: center
+      .ingredients_left_sec
+        text-align: center
+        order: 2
+      .ingredients_right_sec 
+        text-align: center
+        order: 1
+        margin-bottom: 2%
+        img 
+          width: 90%
+          transform: rotate(90deg)
+
+//tablet view
+@media (max-width: 767px)
+  .instructions_cont
+    display: flex
+    padding-bottom: 2%
+    .instructions_cont_right_sec
+      width: 100%
+      margin-top: 6%
+      h4 
+        padding-bottom: 1%
+        text-align: center
+      .inst 
+        flex-direction: column
+        .left_inst 
+          text-align: center
+          width: 100%
+          p 
+            text-align: center
+        .right_inst 
+          text-align: center
+          width: 100%
+          p 
+            text-align: center
+
+//index_page
+@media (max-width: 767px)
+  .index_top_sec 
+    padding-bottom: 0px
+    .index_top_left_sec
+      width: 100%
+      padding-left: 0
+      .heading1 
+        text-align: center
+      .heading2
+        font-size: 30px 
+        text-align: center
+      .btn_cont
+        padding-top: 2%
+        display: flex 
+        flex-direction: column 
+        align-items: center
+    .mobile_sec
+      position: relative
+      padding-top: 24%
+      .leaves_mob
+        width: 50% 
+      .packshot_mob
+        width: 66%
+        position: absolute
+        right: 0
+        bottom: 0
+@media (max-width: 767px)
+  .info_sec
+    text-align: center
+    .info_sec_top, p, h4, h6 
+      text-align: center
+    .info_sec_content
+      padding-bottom: 1%
+    .info_sec_inner
+      .info_sec_content 
+        .bold_text, .normal_text
+          text-align: center
+    .info_mid_sec
+      margin-bottom: 6%
+      .trigotab_packshot2 
+        width: 100%
+        padding-left: 14%
+      .hand_img
+        left: 40% 
+
+@media (max-width:767px)
+  .who_should_use
+    display: flex 
+    flex-direction: column
+    align-items: center
+    background-color: #F8FAF0
+    .who_should_use_left_Sec 
+      width: 100% 
+      .family_img 
+        width: 100%
+    .who_should_use_right_Sec
+      width: 100%
+      padding: 2%
+
+@media (max-width: 767px)
+  .expert_info 
+    .btn_cont 
+      display: flex 
+      flex-direction: column 
+      align-items: center
+
+@media (max-width:767px)
+  .index_pg_bot_sec
+    padding: 10%
+    .external_social_icon 
+      width: 50%
+
+@media (max-width:767px)
+  .contactus 
+    .footer_logo 
+      width: 60% 
+      margin-left: 0
+    .social_icons 
+      display: flex
+      justify-content: center
+  .copyright_txt
+    p
+      text-align: center
+  
+@media (max-width:767px)
+  .about_trigotab_top_sec
+    padding-top:100px
+    display: flex
+    flex-direction: column-reverse
+    .left_sec_bg
+      width: 100%
+      .left_sec 
+        width: 100%
+        padding: 8%
+    .right_sec
+      .trigotab_packshot4 
+        width: 90%
+        margin-left: 0
+
+@media (max-width: 767px)
+  .contactUs
+    .left_sec
+      margin: 10px
+      padding: 20px 20px 80px 20px
+      .left_sec_cont
+        position: initial
+    .right_sec 
+      padding-top: 20px
+
+@media (max-width:1199px) 
+  .faqs
+    h3 
+      font-size: 34px
+
+
+//responsive styles for laptop
+@media (max-width:1199px)
+  .container
+    width: 950px
+
+//responsive styles for tablet/ipad
+@media (max-width:979px)
+  .container
+    width: 750px
+
+//responsive styles for mobile
+@media (max-width:767px)
+  .container
+    width: 100%
+
+@mixin border-radius($radius)
+  border-radius: $radius
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+
+.testing
+  @include border-radius(10px)
+
+

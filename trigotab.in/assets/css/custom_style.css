@@ -1,0 +1,679 @@
+.info_sec .info_mid_sec .hand_img {
+    width: 56% !important;
+}
+.navbar {
+    padding: 1.5rem 1rem !important;
+}
+.about_trigotab_top_sec .right_sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.background-gradient {
+    background-color: white;
+    height: 80%;
+    margin-left: -40%;
+}
+.about_trigotab_top_sec .right_sec .trigotab_packshot4 {
+    width: 90%;
+    height: 100%;
+    margin-left: 10%;
+    object-fit: contain;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+.checkmark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #4bb71b;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #4bb71b;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    margin: 0 auto;
+}
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+.abtTrigotabTxt {
+    width: 80%;
+    margin: auto;
+}
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #4bb71b;
+    fill: #fff;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.ctn {
+    position: absolute;
+    margin-top: -110px;
+}
+.info_sec_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.how_to_use .usage {
+    width: 70%;
+    padding-bottom: 10px;
+}
+button.close span img{
+    width: 6%;
+}
+button.close:hover{
+    opacity: 0.75 !important;
+    color: #fff;
+}
+button.close{
+    position: absolute;
+    z-index: 999;
+    background: royalblue;
+    color: #fff;
+    padding: 10px;
+    opacity: 1;
+    right: 0px;
+    top: 0px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+/* FAQ SECTION styles */
+.blog_card{
+    border-radius: 1.6rem;
+}
+.blog_card:hover{
+    box-shadow: 5px 10px 8px #888888;
+    transition: width 0.6s;
+}
+.custom_card {
+    border-radius: 0 !important;
+    border-style: none !important;
+}
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #fff !important;
+    border-top: 1px solid #8E8E8E;
+    border-bottom: 0 !important;
+}
+.custom_card_body{
+    padding-left: 3rem;
+}
+
+.accordion > .card {
+  overflow: hidden;
+}
+
+.accordion > .card:not(:last-of-type) {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.accordion > .card:not(:first-of-type) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion > .card > .card-header {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+.testimonials .links{
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    padding: 0 10px;
+    list-style-type: none;
+    display: block;
+}
+.footer_link{
+    color: #000000;
+    font-weight: 600;
+    padding-bottom: 8px;
+    display: block;
+}
+
+
+.leadForm .form-group{
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.leadForm label.text-red.text-capitalize.text-normal {
+    font-size: 12px;
+    position: absolute;
+    bottom: -18px;
+    left: 12px;
+    background: white;
+    color: #bd060e;
+}
+
+@media only screen and (max-width: 479px) {
+
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #000;
+    width: 100%;
+}
+
+.covi-favi-block{
+    position: fixed;
+    /* display: block; */
+    background: #fff;
+    /* color: #FFF; */
+    bottom: 10px;
+    z-index: 100;
+    left: 10px;
+    right: initial;
+    border: 8px solid #56326dbf;
+    width: 350px;
+    text-align: center;
+    padding: 0;
+}
+.close-icon {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    background-color: #806592;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    opacity: 1;
+    color: #fff;
+    z-index: 999;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.about_trigotab_play_icon{
+    cursor: pointer;
+}
+
+/*****Gallery********/
+
+.tz-gallery {
+    padding: 10px 10px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    min-height: 270px;
+    max-height: 270px;
+    object-fit: cover;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #611050;
+    font-size: 26px;
+    /* font-family: 'fontawesome'; */
+    /* content:"\f08e"; */
+    /* content:"\f06e"; */
+    content:'';
+    pointer-events: none;
+    z-index: 9;
+    transition: 0.4s;
+    background: #fff;
+    min-width: 50px;
+    text-align: center;
+	background: url(../img/azi-guard-technology.svg) no-repeat center;
+	background-size: 30px;
+}
+.tz-gallery a.lightbox {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    max-height: 270px;
+    position: relative;
+}
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    content: '';
+    transition: 0.4s;
+	background: url(../img/azi-guard-technology.svg) rgb(220 136 78 / 75%) no-repeat center;
+	background-size: 55px;
+}
+.tz-gallery1 .lightbox:after {
+	background: url(../img/coats-objects.svg) rgb(230 54 45 / 75%) no-repeat center;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+/* Video Gallery ********/
+.video-block {
+	text-align: left;
+    background-color: #eee;
+    padding: 5px;
+    min-height: 290px;
+}
+.thumbnail-block {
+	/*padding: 5px;
+    border: 1px solid #ebebeb;*/
+	position: relative;
+}
+.overlap {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3333335e;
+    display: none;
+	cursor: pointer;
+	text-align: center;
+}
+.thumbnail-block:hover .overlap {
+	display: block;
+}
+.thumbnail-block img {
+	width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.overlap img {
+	width: 55px;
+    margin-top: 20%;
+    height: auto;
+}
+.modal-video-body video {
+	width: 100%;
+}
+.modal-video-body iframe {
+	width: 100%;
+}
+.video-block span {
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    padding: 5px;
+    text-align: left;
+    display: block;
+}
+small.b_dte {
+    color: #ac001a;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+    font-weight: 500;
+}
+.video_gallery_section {
+	position: relative;
+	padding: 100px 0;
+	background-color: #ffffff;
+}
+.video_gallery_section1 {
+	margin-top: 15.2em;
+    padding: 50px 0;
+}
+/* Success Page Styles ********/
+.success-page-section {
+    padding: 75px 0;
+	margin-top: 0;
+}
+.success-text {
+    text-align: center;
+}
+.success-text h2 {
+    font-size: 30px;
+    color: #dc884e;
+    font-weight: 900;
+}
+.success-text p {
+    font-size: 18px;
+    padding: 8px 0;
+    color: #222d35;
+    font-weight: 500;
+}
+.success-text h6 {
+    background-color: #ec3726;
+    width: 175px;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+.success-text h6 a {
+    color: #ffffff;
+    display: block;
+}
+.success-text h6 a:hover {
+    text-decoration: none;
+}
+
+.disclmerTxt {
+    color: white;
+    font-size: 14px !important;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 1em !important;
+    text-align: center !important;
+}
+.disclmerTxt b{
+	font-weight: bold;
+}
+.cookie-banner {
+	display: none;
+	height: auto;
+	position: fixed;
+	z-index: 999;
+	padding: 4px 3%;
+	background-color: #eee;
+	-webkit-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+}
+.cookie-banner.bottom {
+	display: block;
+	border-top: 2px solid #26130c;
+	bottom: -90%;
+	transition: bottom 0.5s;
+}
+.cookie-banner.bottom.show {
+	bottom: 0;
+	transition: bottom 1s;
+	-webkit-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+}
+.cookie-banner p {
+	float: left;
+	width: 88%;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.cookie-banner a.button {
+	float: left;
+	margin: 15px;
+	width: 100px;
+	height: 40px;
+	z-index: 100;
+	background: #9d0917;
+	text-transform: uppercase;
+	line-height: 1.4;
+	padding-top: 8px;
+	display: inline-block;
+	color: #FFF!important;
+	text-align: center;
+	text-decoration: none!important;
+	cursor: pointer;
+}
+
+.image_gallery_section {
+	padding: 75px 0;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  background-color: #0b564e;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.faq_section {
+	padding: 50px 0;
+}
+
+
+
+.owl-theme .owl-controls{ margin-top: 0; }
+.owl-theme .owl-controls .owl-buttons div{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    background: #f1971f;
+    color: #fff;
+    border-radius: 0;
+    margin-right: 5px;
+    opacity: 1;
+}
+.owl-prev:before,
+.owl-next:before{
+    content: "\f060";
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    font-weight: 900;
+}
+.owl-next:before{ content: "\f061"; }
+.expert_video_block {
+    position: relative;
+    margin-top: 2%;
+}
+.expert_video_block .gradient {
+    background-image: linear-gradient(320deg, rgba(0, 0, 0, 0) 0%, #222 100%);
+    border-radius: 26px;
+}
+.expert_video_block .gradient img{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.expert_video_icon_block {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+.expert_video_icon_cont{
+    position: absolute;
+    top: 38%;
+    left: 46%;
+}
+
+.about_trigotab_video_block {
+    position: relative;
+}
+.about_trigotab_video_block .gradient {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    border-radius: 26px;
+}
+.about_trigotab_video_block .gradient img{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.about_trigotab_icon_cont{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+.about_trigotab_icon_cont img{
+    width: 60% !important;
+}
+.custom_input{
+    border-style: none;
+    background-color: transparent;
+    border-bottom: 1px solid #000000;
+    border-radius: 0;
+    outline: none;
+    outline-color: #fff;
+}
+label.text-red.text-capitalize.text-normal{
+    color: red;
+    font-size: 12px;
+    text-transform: none !important;
+}
+.instructions_cont .instructions_cont_right_sec {
+    margin-top: 4% !important;
+}
+h1.side_heading{
+    font-size:32px;
+}
+.side_heading{
+    color: #0B564E;
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 2%;
+}
+.footer_heading{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+.instruction .right_icon{
+    width: 16%;
+    margin-left: 6%;
+    margin-bottom: 4%;
+}
+.instruction .icon{
+    width: 28%;
+}
+
+.instruction P{
+    font-weight: 700;
+}
+
+.info_mid_sec .trigotab_packshot2 .hand_img{
+  animation: wave 4s linear infinite
+}
+.info_sec .info_mid_sec .trigotab_packshot2 {
+    width: 90%;
+}
+
+.spacing{
+    margin-bottom: 20px;
+}
+
+.mobile_trigotab_img{
+    width: 200px !important;
+}
+
+@media (max-width:767px){
+    .instruction .right_icon{
+        width: 16%;
+        margin-left: 0;
+        margin-bottom: 4%;
+    }
+    .footer_heading{
+        text-align: center;
+    }
+    .why_choose_trigotab_sec{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .expert_advice_sec_heading{
+        font-size: 28px;
+    }
+    .testimonials {
+        padding-bottom: 20px;
+    }
+    .expert_video_icon_block {
+        left:140px;
+    }
+    .background-gradient {
+        margin-left: 0;
+    }
+    .about_trigotab_top_sec .right_sec .trigotab_packshot4{
+        margin-left: 0;
+        width: 100%;
+    }
+    a.navbar-brand {
+        width: 42% !important;
+    }
+    nav .trigotab_logo {
+        width: 136px;
+    }
+    .navbar-brand {
+        padding-top: 0 !important;
+    }
+    .buy_now{
+        font-size:14px;
+    }
+    h1.side_heading{
+      text-align: center;
+    }
+}
+
+@keyframes wave { 
+    0% { 
+        transform:rotate(0deg); 
+    } 
+    50% { 
+        transform:rotate(6deg); 
+    } 
+    100% { 
+        transform:rotate(0deg); 
+    } 
+}
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4bb71b;
+    }
+}

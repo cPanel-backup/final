@@ -1,0 +1,406 @@
+@import '../bootstrap-4.4.1/scss/bootstrap'
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap')
+@import '_sass_custom_attributes'
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap')
+
+.aaa 
+  background-color: #0073a1
+  min-height: 800px
+html 
+  scroll-behavior: smooth
+.navbar-section
+  .custom-nav
+    background-color: #ffffff
+    border-bottom: 1px solid #ececec
+.custom-nav-menu 
+  margin-right: 50px
+  li 
+    padding: 0 10px
+    a 
+      color: #0073a1 !important
+      font-family: 'Open Sans', sans-serif
+      font-size: 14px
+      font-weight: 600
+      &:hover,&.active
+        color: #9bc33d !important
+.nav-form
+  button 
+    background-color: #0073a1
+    border-radius: 0
+    color: #ffffff
+    border: none !important
+    font-size: 12px
+    font-weight: 600
+    padding: 5px
+    width: 100px
+    text-align: center
+.banner-section
+  margin-top: 96px
+  img 
+    width: 100%
+.about-section
+  padding: 50px 0
+  position: relative
+  background: url(../../assets/images/about.png) no-repeat
+  background-size: 50%
+  background-position: -15% 50px
+
+  .about-pic
+    display: none
+    position: absolute
+    left: -6.8%
+    top: 50px
+    width: 50%
+    img 
+      width: 100%
+  .about-right
+    padding-top: 6em
+    h4 
+      color: #86939f
+      position: relative
+      text-indent: 20px
+      font-size: 18px
+      font-weight: 600
+      font-family: 'Open Sans', sans-serif
+      margin-top: 1.6em
+      &::before
+        position: absolute
+        content: ''
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        background-color: #9bc33d
+        left: 0
+        top: 5px
+.enh
+  &::before   
+    background-color: #259366 !important
+.eff
+  &::before   
+    background-color: #0ba8b2 !important
+.saf
+  &::before   
+    background-color: #0073a1 !important
+    p 
+      color: #4d4d4d
+      font-size: 14px
+      font-family: 'Open Sans', sans-serif
+.bg-section
+  background: url(../images/bg-img.png)
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 500px
+  margin-top: 50px
+  .bg-txt 
+    h6 
+      font-family: 'Open Sans', sans-serif
+      color: #ffffff
+      font-size: 36px
+      font-weight: 900
+      text-align: center
+      margin-bottom: 0
+      padding: 5.4em 0
+      line-height: 1.5
+
+.testimonial-section
+  background-color: #ffffff
+  padding: 50px 0
+._hdng
+  h2
+    color: #0073a1
+    font-size: 30px
+    margin-bottom: 1em
+.f_hdng
+  h2
+    font-size: 30px
+    color: #a1c261
+    margin-bottom: 1.5em
+    margin-top: 0.5em
+
+.demo
+  background: #ffffff
+
+.testimonial
+  margin: 0 20px 40px
+
+  .testimonial-content
+    padding: 40px 15px 30px 50px
+    background: #fff
+    position: relative
+    overflow: hidden
+    height: 200px
+
+    &:after
+      content: ""
+      display: inline-block
+      width: 20px
+      height: 20px
+      background: #fff
+      position: absolute
+      bottom: -10px
+      left: 22px
+      transform: rotate(45deg)
+
+.testimonial-content .testimonial-icon
+  width: 50px
+  height: 45px
+  text-align: center
+  font-size: 36px
+  color: #a1c261
+  line-height: 42px
+  position: absolute
+  top: 37px
+  left: 0
+
+  &:before
+    content: ""
+    border-left: 18px solid transparent
+    position: absolute
+    top: -16px
+    left: 1px
+
+.testimonial
+  .description
+    font-size: 15px
+    color: #0073a1
+    line-height: 23px
+    margin: 0
+    font-family: 'Lato', sans-serif
+  
+  img 
+    width: 90px
+    float: left
+    margin-right: 15px
+
+  .title
+    display: block
+    font-size: 16px
+    color: #f24657
+    text-transform: capitalize
+    margin: 0 0 5px 0
+    font-family: 'Lato', sans-serif
+    padding-top: 22px
+
+  .post
+    display: block
+    font-size: 14px
+    color: #a77f7f
+    font-family: 'Lato', sans-serif
+    font-weight: 600
+
+.owl-theme .owl-controls
+  margin-top: 20px
+
+  .owl-page
+    span
+      background: #ccc
+      opacity: 1
+      transition: all 0.4s ease 0s
+
+    &.active span
+      background: #a1c261
+
+  &.clickable .owl-page:hover span
+    background: #a1c261
+
+.store-block
+  background: #8cbfd4
+  p
+    margin-bottom: 0px
+    padding: 13px 0
+    font-weight: 500
+    color: #fff
+    font-size: 22px
+
+.faq-block
+  padding: 2em    
+
+section.footer-block
+  padding: 2em
+  background: #0073a1  
+  ._addrs 
+    margin-left: 8em
+    margin-top: 1em
+
+  h3 
+    font-size: 20px
+    color: #a1c261
+  p 
+    color: white
+    font-size: 14px
+    margin: 0
+    line-height: 1.6  
+
+  .br_wyt
+    border-right: 2px solid rgba(255, 255, 255, 0.8)
+
+.the-count
+  color: #ffffff
+.text-red
+  color: #ffffff
+  margin-bottom: 0px !important
+
+._form
+  padding-left: 4em
+  h4
+    font-size: 16px
+    color: white
+    font-weight: 400
+    margin-bottom: 2em    
+.btn._form_btn
+  display: block
+  width: 100%
+  background: #a1c261
+  color: white
+  padding: 0.8em
+  text-transform: uppercase
+
+
+.social_icons 
+  margin-left: 8em
+  margin-top: 2em
+  ul 
+    padding: 0
+    list-style-type: none
+    li 
+      display: inline
+      color: white
+      a 
+        color: white 
+        padding: 2px 8px
+        font-size: 1.5em
+
+.bg_img
+  background: url(../../assets/images/faq-bg.svg) no-repeat
+  background-size: 90%
+  width: 100%
+  height: 350px
+  margin: 0 auto
+  background-position: center
+
+
+.faq
+  #accordion
+    width: 80%
+    margin: 0 auto
+
+  .card
+    margin-bottom: .5em
+    background: none
+    border: none
+    -webkit-box-shadow: none
+    box-shadow: none
+    border-radius: 0
+
+  .card-header
+    padding: 0
+    border: none
+    background: transparent
+    border-bottom: 1px solid #0073a1c9
+
+  .card-body
+    font-size: 16px
+    color: #5d5d5d
+    background: #7f2f980f
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125)
+    padding-top: 10px
+
+  .hdng
+    a
+      display: block
+      position: relative
+      color: #5d5d5d
+      font-size: 18px
+      font-weight: 600
+      text-decoration: none
+      padding: 0.75rem 1.25rem
+      line-height: 22px
+
+      &:after
+        font: normal normal normal 14px/1 FontAwesome
+        font-size: inherit
+        content: "\f055"
+        position: absolute
+        right: 5px
+        font-size: 1.4em
+        margin-right: -8px
+
+    > a[aria-expanded="true"]:after
+      content: "\f056"
+
+.footer_bottom
+  padding: 1em
+  background: #a1c261
+  p, a 
+    text-decoration: none
+    font-size: 14px
+    color: white
+    margin: 0      
+
+.slider-section
+  .carousel-indicators
+    left: auto !important
+    margin-right: 6px !important
+    margin-bottom: 6px !important
+    li
+      width: 9px
+      height: 9px
+      margin: 1px 5px
+      border-radius: 50%
+      border: 2px solid #ffffff
+      background: #0073a1
+
+@media screen and (max-width: 767px) 
+  .slider-section
+    margin-top: 75px
+  .banner-section
+    margin-top: 75px
+  a.navbar-brand img
+    width: 70%
+  ._addrs, .social_icons, ._form
+    margin: 0 0 10px 0 !important
+    padding: 0!important
+    text-align: center
+  .f_hdng
+    h2
+      margin-bottom: 0.5em
+  .store-block
+    p
+      padding: 13px 10px
+      font-size: 14px
+  
+  .footer-block, .faq-block
+    padding: 2em 1em !important
+  
+  
+  .about-section
+    padding: 50px 0
+    position: relative
+    background: url(../../assets/images/about.png) no-repeat
+    background-size: 65%
+    background-position: -15% 25px
+  ._form 
+    .mt-4
+      margin-top: 0!important
+    .col
+      width: 100%
+      flex-basis: initial  
+      margin-top: 0.5em
+  ._form h4
+    margin-bottom: 1em
+    margin-top: 2em
+    line-height: 1.6  
+  section.footer-block .br_wyt
+    border-right: 0px solid rgba(255, 255, 255, 0.8)  
+
+  ._hdng h2
+    color: #0073a1
+    font-size: 20px
+    margin-bottom: 0em
+  .bg-section 
+    background-position: center
+  .bg-section .bg-txt h6
+    font-size: 26px
+    line-height: 1.8    
+  .about-section .about-right
+    padding-top: 12em  
